@@ -63,7 +63,7 @@ anim = WaveAnimation()
 anim.make_video("wave.mp4", param_by_frame=params, fps=30, num_workers=4)
 ```
 
-![](assets/simple_wave_animation.mp4)
+![](assets/simple_wave_animation.gif)
 
 ## Usage
 This library has a single class: `parallel_animate.Animator`. To make an animation, you must create your own class inheriting from it and define the following methods:
