@@ -1,0 +1,23 @@
+[project]
+name = "parallel-matplotlib-animation"
+version = "0.1.0"
+description = "Animate matplotlib figures into videos, in parallel but with efficient caching"
+authors = [
+    {name = "Sibo Wang-Chen",email = "sibo.wang@epfl.ch"}
+]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "matplotlib>=3.10.0",
+    "numpy>=2,<3",
+    "tqdm>=4.67",
+    "av>=14.0",
+    "Pillow>=11.0",
+]
+
+[tool.poetry]
+packages = [{include = "parallel_animate", from = "src"}]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
